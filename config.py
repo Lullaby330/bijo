@@ -18,12 +18,12 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001833301203"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "5905492505"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://plmvkijfoorbky:26143878d801bb396773296fed5e9b242b1b354750db1d1fd8c0c64affb8ee30@ec2-44-198-82-71.compute-1.amazonaws.com")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://plmvkijfoorbky:26143878d801bb396773296fed5e9b242b1b354750db1d1fd8c0c64affb8ee30@ec2-44-198-82-71.compute-1.amazonaws.com:5432/dcpobo1p96etd8")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001854730884"))
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001818544930"))
-FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1001537042082"))
+FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1001883816615"))
 FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "-1001685954548"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
