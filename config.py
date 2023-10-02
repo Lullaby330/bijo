@@ -18,7 +18,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001833301203"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "5905492505"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://plmvkijfoorbky:26143878d801bb396773296fed5e9b242b1b354750db1d1fd8c0c64affb8ee30@ec2-44-198-82-71.compute-1.amazonaws.com:5432/dcpobo1p96etd8")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://dhonuhog:2IY8DSxcZNYezij84IOPGBlC1-0fI8j6@tiny.db.elephantsql.com/dhonuhog")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001862038588"))
@@ -32,7 +32,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS, "5905492505 5407289729 5905492405").split()):
+    for x in (os.environ.get("ADMINS", "5905492505 5407289729 5905492405").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
